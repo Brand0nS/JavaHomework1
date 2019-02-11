@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package a15246287;
+
 /**
  *
  * @author Brandon
@@ -12,7 +12,8 @@ package a15246287;
 /** Brandon Scott**/
 import java.util.Scanner;
 import java.lang.Math; 
-public class A15246287 {
+import javax.swing.*;
+public class A15 {
 
     /**
      * @param args the command line arguments
@@ -63,14 +64,12 @@ public class A15246287 {
             System.out.println("This problem computes the Hailstone sequences.");
             System.out.println("Please enter a positive integer");
             int numberOfTries=0;
-            Scanner Input;
-            Input = new Scanner(System.in);
-            int n = Input.nextInt();
+//            Scanner Input;
+//            Input = new Scanner(System.in);
+//            int n = Input.nextInt();
+            int n;
+            n = Integer.parseInt(JOptionPane.showInputDialog(null, "Please enter a number: "));
             
-            if(n==1){
-                System.out.println("This process took"+numberOfTries+"times to reach 1");
-                 
-            }
             
            while(n!=1){
             if(n%2==0) {
@@ -86,7 +85,11 @@ public class A15246287 {
             numberOfTries++;
             }
           }
-            return 0;
+           if(n==1){
+               System.out.println("This process took "+numberOfTries+" times to reach 1");
+                
+           } 
+           return 0;
            
           }
        
