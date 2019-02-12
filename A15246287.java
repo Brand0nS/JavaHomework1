@@ -13,7 +13,7 @@
 import java.util.Scanner;
 import java.lang.Math; 
 import javax.swing.*;
-public class A15 {
+public class A15246287 {
 
     /**
      * @param args the command line arguments
