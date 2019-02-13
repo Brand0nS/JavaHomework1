@@ -61,17 +61,14 @@ public class A15246287 {
     
         
         public static int printSomething(){
-            System.out.println("This problem computes the Hailstone sequences.");
-            System.out.println("Please enter a positive integer");
-            int numberOfTries=0;
-//            Scanner Input;
-//            Input = new Scanner(System.in);
-//            int n = Input.nextInt();
+            System.out.println("This problem computes the Hailstone sequences."); //This is a prompt
+            System.out.println("Please enter a positive integer"); //Prompts the user to input
+            int numberOfTries=0; //This a counter for the number of tries it takes to reach 1.
             int n;
-            n = Integer.parseInt(JOptionPane.showInputDialog(null, "Please enter a number: "));
+            n = Integer.parseInt(JOptionPane.showInputDialog(null, "Please enter a number: ")); //The JOptionPane prompt
             
             
-           while(n!=1){
+           while(n!=1){  //Main program logic
             if(n%2==0) {
                   System.out.print(n+" is even, so take half=");  
                    n=n/2;
