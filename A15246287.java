@@ -92,12 +92,26 @@ public class A15246287 {
        
         //printSomething();
     
-    public static int interceptMessage(){
-    
-    
-    
-   
-        return 0;
-}
+       public static String interceptMessage(){
+            
+        	String EncryptedChar=":mmZ\\dxZmx]Zpgy";
+        	int n = EncryptedChar.length();
+        	String originalChar= "";	
+        	int keyMax=100;
+        	for(int Key=1; Key>=keyMax; Key++) {//cycles through all the possible key combinations.
+        		for(int i=0; i<n; i++) { //loops through the length of the EncryptedChar.
+        	int finalChar = EncryptedChar.charAt(Integer.parseInt(EncryptedChar));
+        	if(finalChar-Key < 126) {
+        		originalChar = 32 - ((finalChar - Key)+ 127);
+        	}
+        	else originalChar= finalChar-Key;
+        	System.out 
+        		}
+         
+        			
+        		
+        	}
+        	
+        }
     
 }
